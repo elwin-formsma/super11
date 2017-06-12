@@ -1,6 +1,7 @@
 <?php
 
-include("host.php");
+require("host.php");
+
 
 $db = new mysqli($my_host, $my_user, $my_pw, $my_db); //we change the mysqli_connect to "new mysqli"
 

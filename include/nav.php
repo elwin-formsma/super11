@@ -6,7 +6,6 @@ echo "<body>
 	<div class='col-md-1'></div>
 
 	<div class='col-md-10'>
-		Logged in as: ".$_SESSION['sess_username']."
 
 
 
@@ -61,7 +60,7 @@ echo "
 			<li><a href='/auth/logout.php'>Logout</a></li>
 
 <li>
-    <form id='form1' name='form1' method='post' action='/auth/login.php'>
+    <form id='form1' name='form1' method='post' action='auth/login.php'>
     <table width='510' border='0'>
     <tr>
     <td colspan='2'>Login Form</td>
@@ -81,6 +80,9 @@ echo "
     </table>
     </form>
 </li>
+
+		Logged in as: ".$_SESSION['sess_username']."
+
 		</ul>
 
 

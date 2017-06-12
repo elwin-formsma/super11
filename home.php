@@ -1,10 +1,10 @@
 <?php
-#$page_home = "class='active'";
-
-#$page = $_GET['page'];
 
 //	Session information
-include("session/session.php");
+session_start();
+//print_r($_SESSION);
+//include("session/session.php");
+include("include/functions.php");
 
 //	Page Header
 include("include/header.php");
@@ -12,6 +12,19 @@ echo "</head>";
 
 //	Navigation (menu)
 include("include/nav.php");
+
+
+
+
+
+
+
+
+
+
+
+
+// Content
 
 echo "
 		<br/><br/>
@@ -22,23 +35,10 @@ echo "
 
 		<br/>
 
-		<h2>Orders:</h2>
-		<ul>
-
 ";
 
 
-    $orders = get_orders();
 
-    foreach ($orders as $o) {
-        echo "<pre>".$o['message']."</pre>";
-        //$message = preg_replace("|x[0-9]|", "", $o['message']);
-        //echo "<li>".$o['id'].": ".$message."</li>";
-    }
-
-echo "
-        </ul>
-";
 
 
 
